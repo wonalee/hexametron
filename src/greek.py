@@ -33,3 +33,31 @@ def isVowel(letter):
 
 	# is not vowel
 	return False
+
+def isDiphthong():
+	# two types of diphthongs:
+
+	# 1: Single vowel (improper)
+	# improper diphthongs with iota subscript ᾳ, ῃ, ῳ or αι ηι ωι 
+
+	# 2: Double vowel
+	# a word has candidates for diphthongs if there is two consecutive vowels
+	# check if there is two-dotted diacritic in any of the two
+	# if there is, this is not a diphthong
+	# otherwise, strip vowel of diacritics and lookup combinations below:
+	# if αι αυ ει ευ οι ου ηυ υι then they are diphthongs are marked as one syllable 
+	# t = { 'α': ['ι', 'υ']} --> αι αυ
+	# {'ε': ['ι' ,'υ']}
+	# {'ο': ['ι', 'υ']}
+	# {'η' : 'υ'}
+	# {'υ' : 'ι'}
+
+	pass
+	# check if the vowel is followed by another vowel
+	# if αι αυ ει ευ οι ου ηυ υι then they are diphthongs are marked as one syllable 
+	# t = { 'α': ['ι', 'υ']} --> αι αυ
+	# {'ε': ['ι' ,'υ']}
+	# {'ο': ['ι', 'υ']}
+	# {'η' : 'υ'}
+	# {'υ' : 'ι'}
+	# improper diphthongs with iota subscript ᾳ, ῃ, ῳ or αι ηι ωι 
